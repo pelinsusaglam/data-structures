@@ -1,0 +1,78 @@
+@model HastaneSistemi.Models.HastaListViewModel
+
+@{
+    ViewBag.Title = "Hastane Durumu";
+}
+
+<h2>Yatan Hastalar</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>TC No</th>
+            <th>Ad Soyad</th>
+            <th>Risk Önceliği</th>
+            <th>İşlem</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var hasta in Model.YatanHastalar)
+    {
+        <tr>
+            <td>@hasta.TCno</td>
+            <td>@hasta.AdSoyad</td>
+            <td>@hasta.Priority</td>
+            <td>
+                <form asp-action="Delete" asp-controller="Hasta" method="post">
+                    <input type="hidden" name="tcNo" value="@hasta.TCno" />
+                    <button type="submit" class="btn btn-danger btn-sm">Sil</button>
+                </form>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<h2 class="mt-5">Kritik Bekleyen Hastalar</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>TC No</th>
+            <th>Ad Soyad</th>
+            <th>Risk Önceliği</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var hasta in Model.KritikBekleyenler)
+    {
+        <tr>
+            <td>@hasta.TCno</td>
+            <td>@hasta.AdSoyad</td>
+            <td>@hasta.Priority</td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<h2 class="mt-5">Normal Bekleyen Hastalar</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>TC No</th>
+            <th>Ad Soyad</th>
+            <th>Risk Önceliği</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var hasta in Model.NormalBekleyenler)
+    {
+        <tr>
+            <td>@hasta.TCno</td>
+            <td>@hasta.AdSoyad</td>
+            <td>@hasta.Priority</td>
+        </tr>
+    }
+    </tbody>
+</table>

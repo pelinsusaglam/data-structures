@@ -1,0 +1,11 @@
+CustomLinkedList içerisinde hastaların tutulduğu hash tablosuna ekleme çıkartma içerisinde hasta arama gibi metodları tanımladım ve yazdım.
+CustomPriorityQueue Heap veri modeli ile yatak sayısı dolduktan sonra randevuda bekleyen kritik hastalar için sıralama yapmakta. /Geliştirilecek.
+CustomQueue risk önceliği düşük hastaların sıralaması için kullanılmakta. /Geliştirilecek.
+Hasta modeli hastaya ait verilerin tanımlandığı yer. Bağlı liste modeli.
+HastaHashTablosu modeli bütün hastalar bu hash içerisinde tutulacak. İçerisinde ekleme, çıkartma, arama ve hash metodları var.
+HastaLastView modeli birden fazla veri parçasının view'a gönderilmesini sağlamak için oluşturulmuş bir model.
+HastaRepository modeli içerisinde kullanılan diğer modellerdeki metodlar kullanılarak hasta ekleme, çıkartma, yatan hastaların ve bekleyen hastaların listelerinin alınması işlemlerini yaptım.
+
+
+Şu an için yaptığım kısımda projeyi çalıştırdığınızda localhost üzerinden /Hasta/Add ve /Hasta/List uzantılarıyla gerekli ekranlara ulaşabilirsiniz.
+
