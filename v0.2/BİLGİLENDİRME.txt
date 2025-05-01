@@ -1,0 +1,5 @@
+Kodları çok fazla Türkçe İngilizce karışık yazmıştım artık tamamını İngilizce yaptım.
+Queue'yu hazır metodlar yazılı bir şekilde kullanmıştım bu hazır metodları temizledim ve baştan yazdım.
+Önceki kodda kendi hash tablomu entegre edememiştim onun yerine repository içerisinde dict ile işlemler yapmıştım ancak hash tablosu duruyordu. Hash tablosunu entegre ettim.
+CPQueue = custom priority queue -> Heap yapısı hala düzenlemedim düzenlenmesi lazım.
+Ekrandaki labelları değiştirdim erişim daha kolay oldu ekleme ve silme ekranına.
