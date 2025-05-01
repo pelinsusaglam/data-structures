@@ -65,7 +65,7 @@ namespace HospitalSystem.Models
             if(NextPatient != null)
             {
                 NextPatient.IsHospitalized = true;
-                PatientHashTable.Remove(NextPatient.TCno);
+                PatientHashTable.Remove(long.Parse(NextPatient.TCno));
                 PatientHashTable.AddTable(NextPatient);
             }
         }

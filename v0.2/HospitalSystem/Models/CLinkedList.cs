@@ -17,7 +17,7 @@ namespace HospitalSystem.Models
             {
                 return false; 
             }
-            if(head.TCno == tcno) //Silinecek hasta head ise
+            if(long.Parse(head.TCno) == tcno) //Silinecek hasta head ise
             {
                 head = head.next;
                 count--;
@@ -27,7 +27,7 @@ namespace HospitalSystem.Models
             {
                 Patient? prev = head;
                 Patient? iter = head;
-                while(iter != null && iter.TCno != tcno)
+                while(iter != null && long.Parse(iter.TCno) != tcno)
                 {
                     prev = iter;
                     iter = iter.next;
@@ -53,7 +53,7 @@ namespace HospitalSystem.Models
             else
             {
                 Patient? iter = head;
-                while(iter != null && iter.TCno != tcno)
+                while(iter != null && long.Parse(iter.TCno) != tcno)
                 {
                     iter = iter.next;
                 }

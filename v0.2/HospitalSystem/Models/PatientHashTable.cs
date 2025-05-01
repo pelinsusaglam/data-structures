@@ -10,7 +10,7 @@ namespace HospitalSystem.Models
         }      
         public static void AddTable(Patient patient) //Model alacak.
         {
-            int index = Hash(patient.TCno);
+            int index = Hash(long.Parse(patient.TCno));
             if(table[index]==null) //Index'te herhangi bir liste yok.
             {
                 table[index] = new CLinkedList();                
