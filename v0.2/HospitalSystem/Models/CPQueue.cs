@@ -2,15 +2,30 @@ namespace HospitalSystem.Models //Güncellenecek.
 {
     public class CPQueue
     {
-        private List<Patient> heap = new List<Patient>();
+        private Patient[] heap;
+        private int heapSize;
         private int Parent(int i) => (i - 1) / 2;
         private int Left(int i) => 2 * i + 1;
         private int Right(int i) => 2 * i + 2;
 
+        public CPQueue()
+        {
+            heap = new Patient[16];
+            heapSize = 0;
+        }
+
         public void Enqueue(Patient patient)
         {
-            heap.Add(patient);
-            int i = heap.Count - 1;
+            // Dizi boyutu kontrolü
+            if (heapSize == heap.Length)
+            {
+                ExpandArray();
+            }
+
+            // Hastayı dizinin sonuna ekle
+            heap[heapSize] = patient;
+            int i = heapSize;
+            heapSize++;
 
             // Sift Up işlemi
             while (i != 0 && heap[Parent(i)].Priority > heap[i].Priority)
@@ -22,19 +37,18 @@ namespace HospitalSystem.Models //Güncellenecek.
 
         public Patient? Dequeue()
         {
-            if (heap.Count == 0)
+            if (heapSize == 0)
                 return null;
 
-            if (heap.Count == 1)
+            if (heapSize == 1)
             {
-                var root = heap[0];
-                heap.RemoveAt(0);
-                return root;
+                heapSize--;
+                return heap[0];
             }
 
             Patient rootHasta = heap[0];
-            heap[0] = heap[heap.Count - 1];
-            heap.RemoveAt(heap.Count - 1);
+            heap[0] = heap[heapSize - 1];
+            heapSize--;
 
             Heapify(0);
 
@@ -47,10 +61,10 @@ namespace HospitalSystem.Models //Güncellenecek.
             int left = Left(i);
             int right = Right(i);
 
-            if (left < heap.Count && heap[left].Priority < heap[smallest].Priority)
+            if (left < heapSize && heap[left].Priority < heap[smallest].Priority)
                 smallest = left;
 
-            if (right < heap.Count && heap[right].Priority < heap[smallest].Priority)
+            if (right < heapSize && heap[right].Priority < heap[smallest].Priority)
                 smallest = right;
 
             if (smallest != i)
@@ -58,6 +72,16 @@ namespace HospitalSystem.Models //Güncellenecek.
                 Swap(i, smallest);
                 Heapify(smallest);
             }
+        }
+
+        private void ExpandArray()
+        {
+            Patient[] newArray = new Patient[heap.Length * 2];
+            for (int i = 0; i < heapSize; i++)
+            {
+                newArray[i] = heap[i];
+            }
+            heap = newArray;
         }
 
         private void Swap(int i, int j)
@@ -69,12 +93,17 @@ namespace HospitalSystem.Models //Güncellenecek.
 
         public bool IsEmpty()
         {
-            return heap.Count == 0;
+            return heapSize == 0;
         }
 
         public List<Patient> ToList()
         {
-            return new List<Patient>(heap);
+            List<Patient> result = new List<Patient>();
+            for (int i = 0; i < heapSize; i++)
+            {
+                result.Add(heap[i]);
+            }
+            return result;
         }
     }
 }
