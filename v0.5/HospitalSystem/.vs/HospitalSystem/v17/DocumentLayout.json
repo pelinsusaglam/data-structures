@@ -1,0 +1,73 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\brt_c\\OneDrive\\Masa\u00FCst\u00FC\\v0.3\\HospitalSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BD20E265-66AA-1F66-8A0D-16E395D294E6}|HospitalSystem.csproj|c:\\users\\brt_c\\onedrive\\masa\u00FCst\u00FC\\v0.3\\hospitalsystem\\views\\shared\\_hospitalinfoaccordion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD20E265-66AA-1F66-8A0D-16E395D294E6}|HospitalSystem.csproj|solutionrelative:views\\shared\\_hospitalinfoaccordion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD20E265-66AA-1F66-8A0D-16E395D294E6}|HospitalSystem.csproj|c:\\users\\brt_c\\onedrive\\masa\u00FCst\u00FC\\v0.3\\hospitalsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD20E265-66AA-1F66-8A0D-16E395D294E6}|HospitalSystem.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD20E265-66AA-1F66-8A0D-16E395D294E6}|HospitalSystem.csproj|c:\\users\\brt_c\\onedrive\\masa\u00FCst\u00FC\\v0.3\\hospitalsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD20E265-66AA-1F66-8A0D-16E395D294E6}|HospitalSystem.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\brt_c\\OneDrive\\Masa\u00FCst\u00FC\\v0.3\\HospitalSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\brt_c\\OneDrive\\Masa\u00FCst\u00FC\\v0.3\\HospitalSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-02T07:30:24.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\brt_c\\OneDrive\\Masa\u00FCst\u00FC\\v0.3\\HospitalSystem\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\brt_c\\OneDrive\\Masa\u00FCst\u00FC\\v0.3\\HospitalSystem\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAcwL4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-02T07:27:54.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_HospitalInfoAccordion.cshtml",
+              "DocumentMoniker": "C:\\Users\\brt_c\\OneDrive\\Masa\u00FCst\u00FC\\v0.3\\HospitalSystem\\Views\\Shared\\_HospitalInfoAccordion.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_HospitalInfoAccordion.cshtml",
+              "ToolTip": "C:\\Users\\brt_c\\OneDrive\\Masa\u00FCst\u00FC\\v0.3\\HospitalSystem\\Views\\Shared\\_HospitalInfoAccordion.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_HospitalInfoAccordion.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-02T07:27:47.393Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
