@@ -61,3 +61,12 @@ http://localhost:5049/
 ## Geliştirici Notları
 
 Bu simülasyon, veritabanı kullanmadan sadece C# veri yapılarıyla oluşturulmuştur. Amaç, gerçek zamanlı görev önceliğine göre çalışan bir görev yöneticisi yapmak ve veri yapılarını etkili kullanmaktır.
+
+## Katkı Verenler
+
+- **Ertuğrul Berk Kargın** – 032290044  
+- **Zeynep Buse Can** – 032290055  
+- **Berat Çakır** – 032290054  
+- **Pelinsu Sağlam** – 032290048  
+- **Zeynep Sude Kalkan** – 032290056
+
