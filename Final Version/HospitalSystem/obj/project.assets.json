@@ -8,31 +8,23 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\brt_c\\.nuget\\packages\\": {},
+    "C:\\Users\\b3rk\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD:Final Version/HospitalSystem/obj/project.assets.json
-      "projectUniqueName": "C:\\Users\\b3rk\\Desktop\\Final Version\\HospitalSystem\\HospitalSystem.csproj",
+      "projectUniqueName": "C:\\Users\\b3rk\\Documents\\data-structures\\Final Version\\HospitalSystem\\HospitalSystem.csproj",
       "projectName": "HospitalSystem",
-      "projectPath": "C:\\Users\\b3rk\\Desktop\\Final Version\\HospitalSystem\\HospitalSystem.csproj",
+      "projectPath": "C:\\Users\\b3rk\\Documents\\data-structures\\Final Version\\HospitalSystem\\HospitalSystem.csproj",
       "packagesPath": "C:\\Users\\b3rk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\b3rk\\Desktop\\Final Version\\HospitalSystem\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\brt_c\\OneDrive\\Masaüstü\\B\\Final Version\\HospitalSystem\\HospitalSystem.csproj",
-      "projectName": "HospitalSystem",
-      "projectPath": "C:\\Users\\brt_c\\OneDrive\\Masaüstü\\B\\Final Version\\HospitalSystem\\HospitalSystem.csproj",
-      "packagesPath": "C:\\Users\\brt_c\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brt_c\\OneDrive\\Masaüstü\\B\\Final Version\\HospitalSystem\\obj\\",
->>>>>>> 0d47b76055943f66c4c2e53f2a285d316c08da73:v0.5/HospitalSystem/obj/project.assets.json
+      "outputPath": "C:\\Users\\b3rk\\Documents\\data-structures\\Final Version\\HospitalSystem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\brt_c\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\b3rk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -59,7 +51,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net9.0": {
@@ -83,7 +75,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
