@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\brt_c\\OneDrive\\Masa\u00FCst\u00FC\\B\\Final Version\\HospitalSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BD20E265-66AA-1F66-8A0D-16E395D294E6}|HospitalSystem.csproj|c:\\users\\brt_c\\onedrive\\masa\u00FCst\u00FC\\b\\final version\\hospitalsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD20E265-66AA-1F66-8A0D-16E395D294E6}|HospitalSystem.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD20E265-66AA-1F66-8A0D-16E395D294E6}|HospitalSystem.csproj|c:\\users\\brt_c\\onedrive\\masa\u00FCst\u00FC\\b\\final version\\hospitalsystem\\views\\home\\casenumbers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD20E265-66AA-1F66-8A0D-16E395D294E6}|HospitalSystem.csproj|solutionrelative:views\\home\\casenumbers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD20E265-66AA-1F66-8A0D-16E395D294E6}|HospitalSystem.csproj|c:\\users\\brt_c\\onedrive\\masa\u00FCst\u00FC\\b\\final version\\hospitalsystem\\views\\home\\newsdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD20E265-66AA-1F66-8A0D-16E395D294E6}|HospitalSystem.csproj|solutionrelative:views\\home\\newsdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD20E265-66AA-1F66-8A0D-16E395D294E6}|HospitalSystem.csproj|c:\\users\\brt_c\\onedrive\\masa\u00FCst\u00FC\\b\\final version\\hospitalsystem\\views\\home\\polyclinics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD20E265-66AA-1F66-8A0D-16E395D294E6}|HospitalSystem.csproj|solutionrelative:views\\home\\polyclinics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CaseNumbers.cshtml",
+              "DocumentMoniker": "C:\\Users\\brt_c\\OneDrive\\Masa\u00FCst\u00FC\\B\\Final Version\\HospitalSystem\\Views\\Home\\CaseNumbers.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\CaseNumbers.cshtml",
+              "ToolTip": "C:\\Users\\brt_c\\OneDrive\\Masa\u00FCst\u00FC\\B\\Final Version\\HospitalSystem\\Views\\Home\\CaseNumbers.cshtml",
+              "RelativeToolTip": "Views\\Home\\CaseNumbers.cshtml",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-12T08:46:29.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NewsDetail.cshtml",
+              "DocumentMoniker": "C:\\Users\\brt_c\\OneDrive\\Masa\u00FCst\u00FC\\B\\Final Version\\HospitalSystem\\Views\\Home\\NewsDetail.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\NewsDetail.cshtml",
+              "ToolTip": "C:\\Users\\brt_c\\OneDrive\\Masa\u00FCst\u00FC\\B\\Final Version\\HospitalSystem\\Views\\Home\\NewsDetail.cshtml",
+              "RelativeToolTip": "Views\\Home\\NewsDetail.cshtml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-12T08:46:16.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Polyclinics.cshtml",
+              "DocumentMoniker": "C:\\Users\\brt_c\\OneDrive\\Masa\u00FCst\u00FC\\B\\Final Version\\HospitalSystem\\Views\\Home\\Polyclinics.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Polyclinics.cshtml",
+              "ToolTip": "C:\\Users\\brt_c\\OneDrive\\Masa\u00FCst\u00FC\\B\\Final Version\\HospitalSystem\\Views\\Home\\Polyclinics.cshtml",
+              "RelativeToolTip": "Views\\Home\\Polyclinics.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-12T08:46:14.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\brt_c\\OneDrive\\Masa\u00FCst\u00FC\\B\\Final Version\\HospitalSystem\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\brt_c\\OneDrive\\Masa\u00FCst\u00FC\\B\\Final Version\\HospitalSystem\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAANgAAAAAAAAAAAAiwM8AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-02T07:27:54.873Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
