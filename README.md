@@ -2,7 +2,7 @@
 
 # Hastane Acil Müdahale ve Hasta Yönetim Sistemi
 
-Bu proje, bir hastanenin acil servisinde gerçekleşen hasta kabul, önceliklendirme ve doktor atama süreçlerini modelleyen bir yönetim sistemidir. Proje, çeşitli veri yapıları (AVL Ağaçları, Hash Tablo, Kuyruk, Min-Heap) kullanılarak tasarlanmış olup, kritik ve normal hastaların önceliklerine göre yönetilmesini sağlar.
+Bu proje, bir hastanenin acil servisinde gerçekleşen hasta kabul, önceliklendirme ve doktor atama süreçlerini modelleyen bir yönetim sistemidir. Proje, çeşitli veri yapıları (AVL Ağaçları, Hash Tablosu, Kuyruk, Min-Heap) kullanılarak tasarlanmış olup, kritik ve normal hastaların önceliklerine göre yönetilmesini sağlar.
 
 ## Özellikler
 
