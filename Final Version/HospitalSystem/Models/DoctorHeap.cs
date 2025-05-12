@@ -3,6 +3,7 @@ namespace HospitalSystem.Models
     public class DoctorHeap
     {
         private List<Doctor> heap = new List<Doctor>();
+        private Dictionary<string, int> nameIndexMap = new Dictionary<string, int>(); // Doktor ismi -> index
 
         public int Count => heap.Count;
 
@@ -10,30 +11,37 @@ namespace HospitalSystem.Models
         public void Add(Doctor doctor)
         {
             heap.Add(doctor);
-            HeapifyUp(heap.Count - 1);
+            int index = heap.Count - 1;
+            nameIndexMap[doctor.Name] = index;
+            HeapifyUp(index);
         }
 
         public Doctor Remove() // En az hastaya bakan doktoru çıkarır
         {
             Doctor minDoctor = heap[0];
+            nameIndexMap.Remove(minDoctor.Name);
+
             heap[0] = heap[heap.Count - 1];
+            nameIndexMap[heap[0].Name] = 0;
+
             heap.RemoveAt(heap.Count - 1);
             HeapifyDown(0);
+
             return minDoctor;
         }
-
 
         public Doctor AssignPatient() // Hasta ataması yapar ve en az hastaya bakan doktora 1 hasta ekler
         {
             Doctor leastBusyDoctor = heap[0];
             leastBusyDoctor.PatientCount++;
 
-            HeapifyDown(0); // root değişti heapifydown yeterli
+            HeapifyDown(0); // root değiştiği için heapifydown yeterli
 
             Console.WriteLine($"Assigned a patient to Dr. {leastBusyDoctor.Name}. Total patients: {leastBusyDoctor.PatientCount}");
             return leastBusyDoctor;
         }
-        private void HeapifyUp(int index) // Heap içinde yukarı doğru düzenleme
+
+        private void HeapifyUp(int index)
         {
             while (index > 0)
             {
@@ -44,7 +52,8 @@ namespace HospitalSystem.Models
                 index = parent;
             }
         }
-        private void HeapifyDown(int index) // Heap içinde aşağı doğru düzenleme
+
+        private void HeapifyDown(int index)
         {
             int last = heap.Count - 1;
             while (true)
@@ -64,26 +73,31 @@ namespace HospitalSystem.Models
                 index = smallest;
             }
         }
-        private void Swap(int i, int j) // İki doktoru yer değiştir
+
+        private void Swap(int i, int j) // Doktor pozisyonlarını değiştirir.
         {
             var temp = heap[i];
             heap[i] = heap[j];
             heap[j] = temp;
+
+            // Update dictionary
+            nameIndexMap[heap[i].Name] = i;
+            nameIndexMap[heap[j].Name] = j;
         }
-        public void Print()// Heapteki tüm doktorları yazdır
+
+        public void Print()
         {
             foreach (var doctor in heap)
             {
                 Console.WriteLine($"Dr. {doctor.Name}: {doctor.PatientCount} patients");
             }
         }
+
         public void UpdateDoctorCount(string name, int delta)
         {
-            int index = heap.FindIndex(d => d.Name == name);
-            if (index == -1) return;
+            if (!nameIndexMap.TryGetValue(name, out int index)) return;
 
             heap[index].PatientCount += delta;
-
             HeapifyUp(index);
             HeapifyDown(index);
         }
