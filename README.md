@@ -25,7 +25,7 @@ Bu proje, bir hastanenin acil servisinde gerçekleşen hasta kabul, önceliklend
 
 ```bash
 git clone https://github.com/pelinsusaglam/data-structures.git
-cd data-structures/v0.4
+cd 'data-structures/Final Version/HospitalSystem'
 ```
 
 2. Projeyi bir .Net ortamında açın ve çalıştırın:
