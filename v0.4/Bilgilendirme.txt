@@ -1,5 +1,0 @@
-Eski versiyonda hastaları çakışmayı önlemek için hash tablosu içerisinde linked list olarak tutmaktaydım.
-Artık hastalar hash tablosu içerisinde AVL ağacı olarak tutulmakta.
-Geçmiş versiyonunda hastalar aynı indekse yığıldığı zaman arama maliyeti O(n) olmaktaydı.
-AVL ağacı ile artık arama ve silme işlemleri çok daha hızlı olacak. (Silme işleminden önce aranan hastayı bulma olduğu için o da hızlanmış oldu)
-Sadece ekleme işlemi yavaşlamış oldu ancak kapasite büyük olduğunda hasta arayıp silmek için AVL ağacı bağlı listeye göre çok daha iyi performans verecektir. O(logn)
