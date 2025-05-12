@@ -3,7 +3,24 @@
 }
 
 <!-- Carousel Section -->
-<div id="mainCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+<style>
+    .full-screen-carousel {
+        height: calc(100vh - 56px); /* 56px navbar yüksekliği */
+    }
+    .full-screen-carousel .carousel-inner,
+    .full-screen-carousel .carousel-item,
+    .full-screen-carousel .carousel-item img {
+        height: 100%;
+        object-fit: cover;
+    }
+    .carousel-caption {
+        background: rgba(19, 24, 117, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+    }
+</style>
+
+<div id="mainCarousel" class="carousel slide mb-4 full-screen-carousel" data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
         <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
@@ -41,37 +58,29 @@
 </div>
 
 <!-- Quick Access Cards -->
-<div class="row mb-4">
-    <div class="col-md-3">
-        <div class="quick-access-card">
-            <i class="bi bi-calendar-check"></i>
-            <h5>Online Randevu</h5>
-            <p>Hızlı ve kolay randevu alma</p>
-            <a href="#" class="btn btn-primary">Randevu Al</a>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="quick-access-card">
+<div class="row mb-4 align-items-stretch">
+    <div class="col-md-4">
+        <div class="quick-access-card h-100 d-flex flex-column">
             <i class="bi bi-file-medical"></i>
-            <h5>Laboratuvar Sonuçları</h5>
-            <p>Test sonuçlarınızı görüntüleyin</p>
-            <a href="#" class="btn btn-primary">Sonuçları Gör</a>
+            <h5>Vaka Numaraları</h5>
+            <p>Hastalık kategorileri ve vaka kodları rehberi</p>
+            <a href="@Url.Action("CaseNumbers", "Home")" class="btn btn-primary mt-auto">Rehberi Gör</a>
         </div>
     </div>
-    <div class="col-md-3">
-        <div class="quick-access-card">
+    <div class="col-md-4">
+        <div class="quick-access-card h-100 d-flex flex-column">
             <i class="bi bi-search"></i>
-            <h5>Doktor Arama</h5>
-            <p>Uzman doktorlarımızı bulun</p>
-            <a href="#" class="btn btn-primary">Doktor Ara</a>
+            <h5>Doktor Listesi</h5>
+            <p>Uzman doktorlarımızı ve bölümlerini görüntüleyin</p>
+            <a href="@Url.Action("Doctors", "Home")" class="btn btn-primary mt-auto">Doktorları Gör</a>
         </div>
     </div>
-    <div class="col-md-3">
-        <div class="quick-access-card">
+    <div class="col-md-4">
+        <div class="quick-access-card h-100 d-flex flex-column">
             <i class="bi bi-hospital"></i>
             <h5>Poliklinikler</h5>
-            <p>Bölümlerimiz hakkında bilgi alın</p>
-            <a href="#" class="btn btn-primary">Detaylar</a>
+            <p>Bölümlerimiz hakkında detaylı bilgi alın</p>
+            <a href="@Url.Action("Polyclinics", "Home")" class="btn btn-primary mt-auto">Poliklinikleri Gör</a>
         </div>
     </div>
 </div>
@@ -111,19 +120,19 @@
             </div>
             <div class="card-body">
                 <div class="list-group list-group-flush">
-                    <a href="#" class="list-group-item list-group-item-action">
+                    <a href="@Url.Action("NewsDetail", "Home", new { id = "transplant" })" class="list-group-item list-group-item-action">
                         <div class="d-flex w-100 justify-content-between">
-                            <h6 class="mb-1">COVID-19 Aşı Randevuları</h6>
-                            <small>2 gün önce</small>
+                            <h6 class="mb-1">Başarılı Organ Nakli Operasyonları</h6>
+                            <small class="text-muted">15 Şubat 2025</small>
                         </div>
-                        <p class="mb-1">Yeni dönem aşı randevuları açılmıştır.</p>
+                        <p class="mb-1">Hastanemizde gerçekleştirilen başarılı organ nakli operasyonları hakkında bilgi almak için tıklayın.</p>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action">
+                    <a href="@Url.Action("NewsDetail", "Home", new { id = "award" })" class="list-group-item list-group-item-action">
                         <div class="d-flex w-100 justify-content-between">
-                            <h6 class="mb-1">Yeni Poliklinik Açılışı</h6>
-                            <small>1 hafta önce</small>
+                            <h6 class="mb-1">Uluslararası Akreditasyon Başarısı</h6>
+                            <small class="text-muted">10 Mart 2025</small>
                         </div>
-                        <p class="mb-1">Göz Hastalıkları Polikliniği yeni binasında hizmete başlamıştır.</p>
+                        <p class="mb-1">Hastanemiz uluslararası akreditasyon değerlendirmesinden başarıyla geçti.</p>
                     </a>
                 </div>
             </div>
@@ -136,19 +145,19 @@
             </div>
             <div class="card-body">
                 <div class="list-group list-group-flush">
-                    <a href="#" class="list-group-item list-group-item-action">
+                    <a href="@Url.Action("NewsDetail", "Home", new { id = "technology" })" class="list-group-item list-group-item-action">
                         <div class="d-flex w-100 justify-content-between">
-                            <h6 class="mb-1">Başarılı Karaciğer Nakli</h6>
-                            <small>3 gün önce</small>
+                            <h6 class="mb-1">Yeni Teknolojik Cihaz Yatırımları</h6>
+                            <small class="text-muted">5 Mayıs 2025</small>
                         </div>
-                        <p class="mb-1">Hastanemizde gerçekleştirilen başarılı karaciğer nakli operasyonu.</p>
+                        <p class="mb-1">Hastanemize kazandırılan yeni teknolojik cihazlar hakkında detaylı bilgi.</p>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action">
+                    <a href="@Url.Action("NewsDetail", "Home", new { id = "pol" })" class="list-group-item list-group-item-action">
                         <div class="d-flex w-100 justify-content-between">
-                            <h6 class="mb-1">Tıp Fakültesi Başarısı</h6>
-                            <small>5 gün önce</small>
+                            <h6 class="mb-1">Hastanemizde Yeni Poliklinik Hizmeti</h6>
+                            <small class="text-muted">20 Nisan 2025</small>
                         </div>
-                        <p class="mb-1">Fakültemiz uluslararası başarı sıralamasında ilk 100'e girdi.</p>
+                        <p class="mb-1">Hastanemizde yeni açılan poliklinikler hakkında bilgi almak için tıklayın.</p>
                     </a>
                 </div>
             </div>
@@ -167,13 +176,13 @@
                 <div class="accordion" id="faqAccordion">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
                                 Nasıl randevu alabilirim?
                             </button>
                         </h2>
-                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Online randevu sistemimiz üzerinden veya MHRS üzerinden kolayca randevu alabilirsiniz.
+                                MHRS üzerinden kolayca randevu alabilirsiniz.
                             </div>
                         </div>
                     </div>
@@ -197,7 +206,7 @@
                         </h2>
                         <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                e-Nabız sistemi üzerinden veya hastanemizin online sonuç sisteminden sonuçlarınızı görüntüleyebilirsiniz.
+                                e-Nabız sistemi üzerinden sonuçlarınızı görüntüleyebilirsiniz.
                             </div>
                         </div>
                     </div>

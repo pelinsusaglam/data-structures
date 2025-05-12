@@ -23,6 +23,32 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult CaseNumbers()
+    {
+        return View();
+    }
+
+    public IActionResult Doctors()
+    {
+        return View();
+    }
+
+    public IActionResult Polyclinics()
+    {
+        return View();
+    }
+
+    public IActionResult NewsDetail(string id)
+    {
+        if (string.IsNullOrEmpty(id))
+        {
+            return RedirectToAction("Index");
+        }
+
+        ViewData["NewsId"] = id;
+        return View("NewsDetail");
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

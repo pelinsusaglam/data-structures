@@ -20,16 +20,16 @@ namespace HospitalSystem.Models
         }
         public static void Doctors()
         {
-            Doctor doc_1 = new Doctor("Dr. Ahmet", "Kardiyoloji", 0);
-            Doctor doc_2 = new Doctor("Dr. Ayşe", "Kardiyoloji", 0);
-            Doctor doc_3 = new Doctor("Dr. Mehmet", "Kardiyoloji", 0);
-            Doctor doc_4 = new Doctor("Dr. Elif", "Dahiliye", 0);
-            Doctor doc_5 = new Doctor("Dr. Can", "Dahiliye", 0);
-            Doctor doc_6 = new Doctor("Dr. Zeynep", "Dahiliye", 0);
-            Doctor doc_7 = new Doctor("Dr. Ali", "Genel Cerrahi", 0);
-            Doctor doc_8 = new Doctor("Dr. Fatma", "Genel Cerrahi", 0);
-            Doctor doc_9 = new Doctor("Dr. Kemal", "Genel Cerrahi", 0);
-            Doctor doc_10 = new Doctor("Dr. Selin", "Genel Cerrahi", 0);
+            Doctor doc_1 = new Doctor("Dr. Ahmet Yılmaz", "Kardiyoloji", 0);
+            Doctor doc_2 = new Doctor("Dr. Ayşe Demir", "Kardiyoloji", 0);
+            Doctor doc_3 = new Doctor("Dr. Mehmet Kaya", "Kardiyoloji", 0);
+            Doctor doc_4 = new Doctor("Dr. Elif Çelik", "Dahiliye", 0);
+            Doctor doc_5 = new Doctor("Dr. Can Yüce", "Dahiliye", 0);
+            Doctor doc_6 = new Doctor("Dr. Zeynep Şahin", "Dahiliye", 0);
+            Doctor doc_7 = new Doctor("Dr. Ali Öztürk", "Genel Cerrahi", 0);
+            Doctor doc_8 = new Doctor("Dr. Fatma Yıldız", "Genel Cerrahi", 0);
+            Doctor doc_9 = new Doctor("Dr. Kemal Arslan", "Genel Cerrahi", 0);
+            Doctor doc_10 = new Doctor("Dr. Selin Akar", "Genel Cerrahi", 0);
             AddDoctor(doc_1,0);
             AddDoctor(doc_2,0);
             AddDoctor(doc_3,0);

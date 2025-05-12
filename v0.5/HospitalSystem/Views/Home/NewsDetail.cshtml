@@ -1,0 +1,107 @@
+@model string
+
+@{
+    ViewData["Title"] = "Haber Detayı";
+    var newsId = ViewData["NewsId"] as string;
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Ana Sayfa</a></li>
+                    <li class="breadcrumb-item active">Haber Detayı</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            @if (newsId == "transplant")
+            {
+                <h2 class="card-title mb-4">Başarılı Organ Nakli Operasyonları</h2>
+                <div class="text-muted mb-3">
+                    <i class="bi bi-calendar-event me-2"></i>15 Şubat 2025
+                </div>
+                <img src="~/images/transplant.jpg" class="img-fluid rounded mb-4" alt="Organ Nakli">
+                <div class="card-text">
+                    <p>Bursa Uludağ Üniversitesi Tıp Fakültesi Hastanesi'nde gerçekleştirilen başarılı organ nakli operasyonları ile ilgili önemli gelişmeler kaydedildi.</p>
+                    <p>Hastanemizde son bir ayda:</p>
+                    <ul>
+                        <li>3 karaciğer nakli</li>
+                        <li>5 böbrek nakli</li>
+                        <li>2 kornea nakli</li>
+                    </ul>
+                    <p>operasyonları başarıyla gerçekleştirildi. Organ bağışının önemine dikkat çeken Organ Nakli Merkezi Sorumlusu Prof. Dr. Mehmet Yılmaz, "Organ bağışı hayat kurtarır. Her bağış yeni bir umut, yeni bir yaşam demektir." açıklamasında bulundu.</p>
+                </div>
+            }
+            else if (newsId == "award")
+            {
+                <h2 class="card-title mb-4">Uluslararası Akreditasyon Başarısı</h2>
+                <div class="text-muted mb-3">
+                    <i class="bi bi-calendar-event me-2"></i>10 Mart 2025
+                </div>
+                <img src="~/images/award.jpg" class="img-fluid rounded mb-4" alt="Uluslararası Akreditasyon">
+                <div class="card-text">
+                    <p>Bursa Uludağ Üniversitesi Tıp Fakültesi Hastanesi, uluslararası sağlık standartları ve kalite değerlendirmelerinde üstün başarı göstererek uluslararası akreditasyon belgesini almaya hak kazandı.</p>
+                    <p>Bu başarı ile hastanemiz:</p>
+                    <ul>
+                        <li>Hasta güvenliği ve bakım kalitesi</li>
+                        <li>Uluslararası sağlık standartlarına uyum</li>
+                        <li>Sağlık hizmetlerinde mükemmeliyet</li>
+                        <li>Uluslararası işbirliği ve tanınırlık</li>
+                    </ul>
+                    <p>alanlarında örnek gösterilen bir kurum haline geldi. Hastane Başhekimi Prof. Dr. Ayşe Demir, "Bu başarı, hastanemizin uluslararası arenada tanınırlığını artıracak ve hasta memnuniyetini daha da yükseltecektir." açıklamasında bulundu.</p>
+                </div>
+            }
+            else if (newsId == "technology")
+            {
+                <h2 class="card-title mb-4">Yeni Teknolojik Cihaz Yatırımları</h2>
+                <div class="text-muted mb-3">
+                    <i class="bi bi-calendar-event me-2"></i>5 Mayıs 2025
+                </div>
+                <img src="~/images/technology.jpg" class="img-fluid rounded mb-4" alt="Teknoloji">
+                <div class="card-text">
+                    <p>Hastanemiz bünyesine son teknoloji tıbbi cihazlar kazandırıldı. Yapılan yeni yatırımlarla tanı ve tedavi süreçleri daha da güçlendirildi.</p>
+                    <p>Yeni eklenen cihazlar:</p>
+                    <ul>
+                        <li>3T MR Cihazı</li>
+                        <li>PET/CT Tarayıcı</li>
+                        <li>Robotik Cerrahi Sistemi</li>
+                    </ul>
+                    <p>Bu yatırımlarla hastanemiz, bölgenin en donanımlı sağlık kurumlarından biri olmaya devam ediyor.</p>
+                </div>
+            }
+            else if (newsId == "pol")
+            {
+                <h2 class="card-title mb-4">Hastanemizde Yeni Poliklinik Hizmeti</h2>
+                <div class="text-muted mb-3">
+                    <i class="bi bi-calendar-event me-2"></i>20 Nisan 2025
+                </div>
+                <img src="~/images/pol.jpg" class="img-fluid rounded mb-4" alt="Yeni Poliklinik">
+                <div class="card-text">
+                    <p>Bursa Uludağ Üniversitesi Tıp Fakültesi Hastanesi'nde hasta hizmetlerini genişletmek amacıyla yeni bir poliklinik hizmeti başlatıldı.</p>
+                    <p>Yeni poliklinik hizmeti kapsamında:</p>
+                    <ul>
+                        <li>Genel dahiliye</li>
+                        <li>Kardiyoloji</li>
+                        <li>Göğüs hastalıkları</li>
+                        <li>Endokrinoloji</li>
+                    </ul>
+                    <p>branşlarında uzman hekimlerimiz hizmet vermeye başladı. Hastane Başhekimi Prof. Dr. Ayşe Demir, "Bu yeni hizmet ile hastalarımıza daha kapsamlı ve erişilebilir sağlık hizmeti sunmayı hedefliyoruz." açıklamasında bulundu.</p>
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-warning">
+                    <h4 class="alert-heading">Haber Bulunamadı!</h4>
+                    <p>Aradığınız haber bulunamadı veya yayından kaldırılmış olabilir.</p>
+                    <hr>
+                    <p class="mb-0">Ana sayfaya dönmek için <a href="@Url.Action("Index", "Home")" class="alert-link">tıklayınız</a>.</p>
+                </div>
+            }
+        </div>
+    </div>
+</div> 
