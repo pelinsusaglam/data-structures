@@ -15,7 +15,7 @@ Bu proje, bir hastanenin acil servisinde gerçekleşen hasta kabul, önceliklend
 ## Kullanılan Veri Yapıları
 
 - `HashTable<AVLTree>`: Hastaların TC numaralarına göre saklandığı yapı. TC numarası primary key. İçerisinde ekleme, silme ve arama işlemleri yapılmakta.
-- `MinHeap`: Kritik durumdaki hastaların ve doktorların en az hastalığa sahip bir şekilde sıralanmasının yönetimi.
+- `MinHeap`: Kritik durumdaki hastaların önceliklerine göre sıralanması (1 en öncelikli) ve doktorların baktıkları hasta sayısına göre sıralanması için kullanıldı.
 - `Queue`: Önceliği düşük hastaların sıralı kabul sistemi.
 - `CaseTable<AVL Tree>`: Vakaların numaralarına göre belirlenmiş indekslerde saklandığı yapı. Vaka eklemeleri veya düzenlemeleri dışarıdan yapılmamakta.
 
